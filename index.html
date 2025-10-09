@@ -10,6 +10,7 @@
       font-family: 'Segoe UI', Tahoma, sans-serif;
       background: linear-gradient(135deg, #ffecd2, #fcb69f);
       color: #333;
+      scroll-behavior: smooth;
     }
 
     .container {
@@ -65,7 +66,6 @@
       line-height: 1.6;
     }
 
-    /* Tombol Instagram */
     .social {
       text-align: center;
       margin: 20px 0;
@@ -88,6 +88,25 @@
       transform: scale(1.05);
     }
 
+    .next {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .next a {
+      text-decoration: none;
+      color: white;
+      background: #ff7e67;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .next a:hover {
+      background: #ff9a9e;
+    }
+
     .marquee {
       background: #ff7e67;
       color: white;
@@ -95,12 +114,69 @@
       font-weight: bold;
       font-size: 15px;
     }
+
+    /* Halaman kedua (bagian bawah) */
+    #halaman2 {
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      margin-top: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding-bottom: 20px;
+    }
+
+    #halaman2 header {
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    #halaman2 h1 {
+      margin: 10px 0 5px;
+      font-size: 26px;
+      color: #4b4b4b;
+    }
+
+    #halaman2 ul {
+      font-size: 16px;
+      margin-left: 20px;
+      line-height: 1.6;
+    }
+
+    #halaman2 a {
+      color: #6a5acd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #halaman2 a:hover {
+      text-decoration: underline;
+    }
+
+    .back {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .back a {
+      text-decoration: none;
+      color: white;
+      background: #6a5acd;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .back a:hover {
+      background: #836fff;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Halaman 1 -->
   <div class="container">
     <header>
-      <!-- Ganti link gambar dengan foto kamu -->
       <img src="https://via.placeholder.com/150" alt="Foto Profil">
       <h1>FAZILA DJULHIJA</h1>
       <p>Pelajar SMAN 14 Pekanbaru</p>
@@ -108,19 +184,50 @@
 
     <div class="content">
       <div class="info">
-        <h2>Biodata</h2>
-        <p><b>Nama:</b> FAZILA DJULHIJA</p>
-        <p><b>Umur:</b> 16 tahun</p>
-        <p><b>Status:</b> Pelajar SMAN 14 Pekanbaru</p>
-        <p><b>Hobi:</b> Membaca 📚</p>
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya <b>Fazila Djulhija</b>, pelajar yang bersemangat dari SMAN 14 Pekanbaru. 
+        Saya senang mempelajari hal-hal baru, terutama yang berhubungan dengan teknologi, seni, dan ilmu pengetahuan. 
+        Bagi saya, setiap hari adalah kesempatan untuk berkembang menjadi versi terbaik dari diri sendiri. 🌸</p>
       </div>
 
-      <!-- Tombol Instagram -->
       <div class="social">
         <a href="https://www.instagram.com/fziladjh08?igsh=MWZsczJ0Ym9yMjd1dw==" target="_blank">
           🌸 Kunjungi Instagram Saya 🌸
         </a>
       </div>
+
+      <div class="next">
+        <a href="#halaman2">➡️ Lanjut ke Halaman Berikutnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Halaman 2 -->
+  <div id="halaman2" class="container">
+    <header>
+      <h1>Hobi & Kontak</h1>
+    </header>
+
+    <div class="content">
+      <h2>Hobi Saya</h2>
+      <ul>
+        <li>Membaca buku inspiratif 📚</li>
+        <li>Menggambar dan berkreasi dengan warna 🎨</li>
+        <li>Mendengarkan musik santai 🎧</li>
+        <li>Mempelajari teknologi dan desain web 💻</li>
+      </ul>
+
+      <h2>Kontak Saya</h2>
+      <p><b>Email:</b> fazila@example.com</p>
+      <p><b>Instagram:</b> 
+        <a href="https://www.instagram.com/fziladjh08?igsh=MWZsczJ0Ym9yMjd1dw==" target="_blank">
+          @fziladjh08
+        </a>
+      </p>
+    </div>
+
+    <div class="back">
+      <a href="#top">⬅️ Kembali ke Halaman Utama</a>
     </div>
   </div>
 
@@ -129,7 +236,7 @@
     <marquee behavior="scroll" direction="left">
       🌸 Selamat datang di web pribadi FAZILA DJULHIJA 🌸 | 
       Ini adalah web yang berisi profil diri saya sendiri | 
-      Jangan lupa follow Instagram saya di @fziladjh08 🌸
+      Terima kasih sudah berkunjung 🌸 | Follow Instagram saya di @fziladjh08 🌸
     </marquee>
   </div>
 </body>
